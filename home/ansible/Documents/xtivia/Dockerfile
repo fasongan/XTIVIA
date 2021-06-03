@@ -19,5 +19,5 @@ RUN chmod 775 /home/cpscripts.sh \
     && aws configure set default.region us-east-1
     
 
-ENTRYPOINT ["/home/cpscripts.sh ${ARG_threshold} ${ARG_source_s3} ${ARG_dest_s3} "]
+ENTRYPOINT ["/home/cpscripts.sh $threshold $source_s3 $dest_s3 "]
 CMD ["bash"]
