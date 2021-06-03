@@ -7,7 +7,7 @@ dest_s3=$3
 AWS_ID=
 AWS_key=
 
-#list files in s3
+#list files in s3 bucket
 aws s3 ls $source_s3 --recursive --human-readable --summarize >> source_files
 
 for file in $(cat source_files) ;
